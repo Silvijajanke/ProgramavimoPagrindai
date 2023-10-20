@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Isvedimas
 {
@@ -10,8 +7,16 @@ namespace Isvedimas
     {
         static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.Unicode;
-            Console.WriteLine("labas ir aČIŪ");
+            
+          
+            Console.WriteLine("_________________");
+            Console.WriteLine("|                |");
+            Console.WriteLine("|                |");
+            Console.WriteLine("|  Mano vardas   |");
+            Console.WriteLine("|    Mantas      |");
+            Console.WriteLine("|                |");
+            Console.WriteLine("|                |");
+            Console.WriteLine("_________________");
         }
     }
 }
