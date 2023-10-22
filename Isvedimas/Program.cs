@@ -11,6 +11,7 @@ namespace Isvedimas
         static void Main(string[] args)
         {
             //1 uzduotis
+
             int a = 108;
             int b = 88;
             int c = a + b;
@@ -21,12 +22,15 @@ namespace Isvedimas
             Console.WriteLine(d);
             Console.WriteLine(e);
             Console.WriteLine(f);
+
             //2 uzduotis
+
             int h = 8;
             int j = (h * h);
             Console.WriteLine(Math.Pow(j, 3));
 
             //3 uzduotis
+
             int u = 108;
             int t = 88;
             int r = 10;
