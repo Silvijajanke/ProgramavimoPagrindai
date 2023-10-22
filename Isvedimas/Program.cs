@@ -10,8 +10,30 @@ namespace Isvedimas
     {
         static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.Unicode;
-            Console.WriteLine("labas ir aČIŪ");
+            // 5 uzduotis
+
+            int k = 5;
+            int l = 0;
+            Console.WriteLine($"{k} * {l} = {k * l++}");
+            Console.WriteLine($"{k} * {l} = {k * l++}");
+            Console.WriteLine($"{k} * {l} = {k * l++}");
+            Console.WriteLine($"{k} * {l} = {k * l++}");
+            Console.WriteLine($"{k} * {l} = {k * l++}");
+            Console.WriteLine($"{k} * {l} = {k * l++}");
+            Console.WriteLine($"{k} * {l} = {k * l++}");
+            Console.WriteLine($"{k} * {l} = {k * l++}");
+            Console.WriteLine($"{k} * {l} = {k * l++}");
+            Console.WriteLine($"{k} * {l} = {k * l++}");
+            Console.WriteLine($"{k} * {l} = {k * l++}");
+
+            // 6 uzduotis
+
+            int dvizenklisSkaicius = 88;
+            int desimtys = dvizenklisSkaicius / 10;
+            int vienetai = dvizenklisSkaicius % 10;
+
+            Console.WriteLine($"Dvizenklis skaicius: {dvizenklisSkaicius}");
+            Console.WriteLine($"Skaitmenu sandauga: {desimtys} * {vienetai}= {desimtys * vienetai}");
         }
     }
 }
