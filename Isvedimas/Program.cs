@@ -11,7 +11,7 @@ namespace Isvedimas
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
-            Console.WriteLine("labas ir aČIŪ");
+            
         }
     }
 }
