@@ -11,7 +11,21 @@ namespace Isvedimas
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
-            
+
+            Console.WriteLine("Įveskite bet kokį sveikąjį skaičių");
+            int sveikasis = Console.ReadLine();
+            int l = 0;
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
         }
     }
 }
