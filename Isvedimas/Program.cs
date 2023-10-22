@@ -35,6 +35,19 @@ namespace Isvedimas
             Console.WriteLine($"{skaicius} {o} {skaicius} ");
             Console.WriteLine($"{skaicius} {o} {skaicius} ");
             Console.WriteLine($"{skaicius} {skaicius} {skaicius} {skaicius}");
+
+            // uzduotis 4
+            Console.WriteLine("Įveskite bet kokį skaičių:");
+            int skaicius1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Įveskite dar vieną bet kokį skaičių:");
+            int skaicius2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Įveskite paskutinį bet kokį skaičių:");
+            int skaicius3 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Visų skaičių suma: ");
+            Console.WriteLine($"{skaicius1} + {skaicius2} + {skaicius3} = ${skaicius1+skaicius2+skaicius3}");
+
+
+
         }
     }
 }
