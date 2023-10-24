@@ -15,7 +15,7 @@ namespace Isvedimas
             // uzduotis 1
 
             Console.WriteLine("Įveskite bet kokį sveikąjį skaičių");
-            int sveikasis = Console.ReadLine();
+            int sveikasis = Convert.ToInt32(Console.ReadLine());
             int l = 0;
             Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
             Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
@@ -31,12 +31,12 @@ namespace Isvedimas
 
             // uzduotis 2 
 
-            Console.WriteLine("Įveskite bet kokius tris skaičius");
-            int pirmas = Console.ReadLine();
-            int antras = Console.ReadLine();
-            int trecias = Console.ReadLine();
+            Console.WriteLine("Įveskite bet kokius tris skaičius ir paspauskite ENTER po kiekvienu iš jų");
+            int pirmas = Convert.ToInt32(Console.ReadLine());
+            int antras = Convert.ToInt32(Console.ReadLine());
+            int trecias = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Įvestų skaičių vidurkis:");
-            Console.WriteLine($"({pirmas} * {antras} * {trecias}) / 3 = ${(pirmas*antras*trecias)/3}");
+            Console.WriteLine($"({pirmas} * {antras} * {trecias}) / 3 = " + $"{(pirmas*antras*trecias)/3}");
 
 
         }
