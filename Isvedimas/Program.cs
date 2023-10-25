@@ -58,6 +58,58 @@ namespace Isvedimas
             int skaicius3 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Visų skaičių suma: ");
             Console.WriteLine($"{skaicius1} + {skaicius2} + {skaicius3} = " + $"{skaicius1 + skaicius2 + skaicius3}");
+
+
+            // Uzduotis 8
+
+
+            //  1. Liepkite vartotojui įvesti bet kokį sveikąjį skaičių.
+            //  Išveskite šio skaičiaus daugybos lentelę nuo 1 iki 5.
+
+            Console.WriteLine("Įveskite bet kokį sveikąjį skaičių");
+            int sveikasis = Convert.ToInt32(Console.ReadLine());
+            int l = 1;
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+            Console.WriteLine($"{sveikasis} * {l} = {sveikasis * l++}");
+
+            // 2. Liepkite vartotojui įvesti tris skaičius. Į ekraną išveskite šiuos skaičius ir jų vidurkį.
+            // Pvz.: Įvestų skaičių 4, 5, 8 vidurkis: 5,7.
+
+            Console.WriteLine("Įveskite bet kokius tris skaičius ir paspauskite ENTER po kiekvienu iš jų");
+            int pirmas = Convert.ToInt32(Console.ReadLine());
+            int antras = Convert.ToInt32(Console.ReadLine());
+            int trecias = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Įvestų skaičių vidurkis:");
+            Console.WriteLine($"({pirmas} + {antras} + {trecias}) / 3 = " + $"{(pirmas + antras + trecias) / 3 }");
+
+            // 3. Liepkite įvesti tris skaičius.
+            // Išveskite įvestus skaičius, jų kvadratus,
+            // juos pakeltus trečiuoju laipsniu, taip pat tuos skaičius, padalintus iš dviejų.
+
+            Console.WriteLine("Įveskite bet kokius tris skaičius ir paspauskite ENTER po kiekvienu iš jų");
+            int skaic1 = Convert.ToInt32(Console.ReadLine());
+            int skaic2 = Convert.ToInt32(Console.ReadLine());
+            int skaic3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Įvesti skaičiai yra:" + $"{skaic1}, {skaic2}, {skaic3}");
+
+            Console.WriteLine("Įvesto skaičiaus kvadratas yra: ");
+            Console.WriteLine($"{skaic1 * skaic1}");
+            Console.WriteLine($"{skaic2 * skaic2}");
+            Console.WriteLine($"{skaic3 * skaic3}");
+
+            Console.WriteLine("Įvestas skaičius pakeltas trečiuoju laipsniu: ");
+            Console.WriteLine($"{skaic1 ^ 3 }");
+            Console.WriteLine($"{skaic2 ^ 3 }");
+            Console.WriteLine($"{skaic3 ^ 3 }");
+
+            Console.WriteLine("Įvestas skaičius padalintas iš 2 : ");
+            Console.WriteLine($"{(double)skaic1 / 2 }");
+            Console.WriteLine($"{(double)skaic2 / 2 }");
+            Console.WriteLine($"{(double)skaic3 / 2 }");
+
         }
     }
 }
