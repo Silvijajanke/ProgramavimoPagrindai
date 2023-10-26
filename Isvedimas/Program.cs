@@ -110,6 +110,89 @@ namespace Isvedimas
             Console.WriteLine($"{(double)skaic2 / 2 }");
             Console.WriteLine($"{(double)skaic3 / 2 }");
 
+
+            // uzduotis 9
+
+            // 1. Liepkite vartotojui įvesti savo amžių.
+            // Jei amžius yra 18 arba daugiau, tuomet į ekraną išveskite, kad “jūs galite balsuoti”.
+
+            Console.WriteLine("Įveskite savo amžių");
+            int balsavimoAmzius = Convert.ToInt32(Console.ReadLine());
+            if (balsavimoAmzius >= 18)
+            {
+                Console.WriteLine("Jūs galite balsuoti");
+            }
+            Console.WriteLine("Kita užduotis");
+
+
+            // 2. Liepkite vartotojui įvesti bet kokį skaičių. Parašykite šias atskiras if sąlygas:
+            //Patikrinti, ar skaičius neigiamas, jei taip -aprėkti vartotoją:)
+            //Patikrinti, ar skaičius teigiamas, jei taip -pasveikinti vartotoją;
+            //Patikrinti, ar skaičius lyginis, jei taip -išvesti “taip, skaičius yra lyginis”;
+            //Patikrinti, ar skaičius dalinasi iš 4, jei taip -išvesti “taip, dalinasi iš 4”;
+            //Patikrinti, ar skaičius yra didesnis nei 10, jei taip -išvesti “taip, skaičius yra didesnis už 10”
+
+            Console.WriteLine("Įveskite bet kokį skaičių");
+            int betKokSkaic = Convert.ToInt32(Console.ReadLine());
+            if (betKokSkaic < 0)
+            {
+                Console.WriteLine("Skaičius yra neigiamas!!!!!");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Kita užduotis");
+            Console.Write("Patikrinimas ar skaičius yra teigiamas.");
+            Console.WriteLine("Įveskite bet kokį skaičių");
+            int betKokSkaic1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            if (betKokSkaic1 > 0)
+            {
+                Console.WriteLine("Sveikiname, skaičius yra teigiamas");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Kita užduotis");
+            Console.Write("Patikrinimas ar skaičius yra lyginis.");
+            Console.WriteLine("Įveskite bet kokį skaičių");
+            int betKokSkaic2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            if (betKokSkaic2 % 2 == 0)
+            {
+                Console.WriteLine("Taip,skaičius yra lyginis");
+            }
+            Console.WriteLine("Kita užduotis");
+            Console.Write("Patikrinimas ar skaičius dalinasi iš 4.");
+            Console.WriteLine("Įveskite bet kokį skaičių");
+            int betKokSkaic3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            if ((betKokSkaic3 % 4) == 0)
+            {
+                Console.WriteLine("Taip,dalinasi iš 4");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Kita užduotis");
+            Console.Write("Patikrinimas ar skaičius yra didesnis už 10.");
+            Console.WriteLine("Įveskite bet kokį skaičių");
+            int betKokSkaic4 = Convert.ToInt32(Console.ReadLine());
+            if (betKokSkaic4 > 10)
+            {
+                Console.WriteLine("Taip, skaičius yra didesnis už 10");
+            }
+            Console.WriteLine();
+
+
+            // 3. Liepkite vartotojui įvesti du savo pažymius,
+            //raskite šių pažymių vidurkį, patikrinkite, ar vidurkis yra lygus arba didesnis už 5,
+            //jei taip, išveskite “Valio!!!”
+
+            Console.WriteLine("Įveskite pirmąjį pažymį paspauskite ENTER ir tada įveskite antrąjį");
+            int pazimys1 = Convert.ToInt32(Console.ReadLine());
+            int pazimys2 = Convert.ToInt32(Console.ReadLine());
+            double vidurkis = (pazimys1 + pazimys2) / 2;
+            Console.WriteLine("Pažymių vidurkis : " + vidurkis);
+            if (vidurkis >= 5)
+            {
+                Console.WriteLine("Valio!");
+            }
+            Console.WriteLine();
         }
     }
 }
