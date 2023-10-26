@@ -194,6 +194,28 @@ namespace Isvedimas
             }
             Console.WriteLine();
 
+            //Uzduotis 10
+
+            //1. Liepkite įvesti skaičių.
+            //Jei skaičius lyginis, tuomet išveskite šį skaičių bei jo penktą laipsnį.
+            //Jei skaičius nesidalina iš 4, tuomet liepkite įvesti antrąjį skaičių.
+            //Išveskite abiejų skaičių sumą ir sandaugą.
+
+            Console.WriteLine("Įveskite skaičių");
+            int ivestaskaicius = Convert.ToInt32(Console.ReadLine());
+            if (ivestaskaicius % 2 == 0)
+            {
+                Console.WriteLine("Įvestas skaičius :" + ivestaskaicius);
+                Console.WriteLine($"{ivestaskaicius ^ 5}");
+            }
+            if (ivestaskaicius % 4 != 0)
+            {
+                Console.WriteLine("Įveskite antrąjį skaičių");
+                int antrsk = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Įvestų skaičių suma : ");
+                Console.WriteLine($"{ivestaskaicius + antrsk}");
+                Console.WriteLine("Įvestų skaičių sandauga : ");
+                Console.WriteLine($"{ivestaskaicius * antrsk}");
             }
             
         }
