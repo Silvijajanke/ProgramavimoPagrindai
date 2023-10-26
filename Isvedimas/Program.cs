@@ -284,6 +284,84 @@ namespace Isvedimas
                 }
                 
                 Console.WriteLine("Programos pabaiga ");
+
+                // uzduotis 12
+                // 1. Liepkite įvesti tris skirtingus skaičius. Suraskite, kuris iš šių skaičių yra didžiausias.
+
+                Console.WriteLine("Įveskite tris skaičius, po kiekvienu paspauskite ENTER");
+                int numb1 = Convert.ToInt32(Console.ReadLine());
+                int numb2 = Convert.ToInt32(Console.ReadLine());
+                int numb3 = Convert.ToInt32(Console.ReadLine());
+
+                if (numb3 < numb1 && numb1 > numb2)
+                {
+                    Console.WriteLine("Pirmas skaičius yra didžiausias");
+                }
+                else if (numb3 < numb2 && numb2 > numb1)
+                {
+                    Console.WriteLine("Antras skaičius yra didžiausias");
+                }
+                else
+                {
+                    Console.WriteLine("Trečias skaičius yra didžiausias");
+                }
+                Console.WriteLine("Programos pabaiga");
+
+                // 2. Liepkite įvesti egzamino rezultatą. Atlikite šiuos patikrinimus:
+                //ar gautas rezultatas yra[8 - 10];
+                //ar gautas rezultatas yra[5 - 8);
+                //ar gautas rezultatas yra< 5.
+
+                Console.WriteLine("Įveskite egzamino rezultatą");
+                int egzrez = Convert.ToInt32(Console.ReadLine());
+                if (egzrez >= 8 && egzrez <= 10)
+                {
+                    Console.WriteLine("Egzamino rezultatas yra 8, 9 arba 10");
+                }
+                else if (egzrez >= 5 && egzrez <= 8)
+                {
+                    Console.WriteLine("Egzamino rezultatas yra 5,6,7 arba 8");
+                }
+                else
+                {
+                    Console.WriteLine("Egzamino rezultatas yra mažiau nei 5");
+                }
+                Console.WriteLine("Programos pabaiga");
+
+                // 3. Liepkite įvesti du skaičius. Patikrinkite (naudojant 4 atskirus if’us):
+                //ar pirmas skaičius yra didesnis už antrąjį, arba yra lygus 0;
+                //ar antras skaičius yra didesnis už pirmąjį, arba yra lygus 5;
+                //ar pirmas skaičius yra didesnis už antrąjį ir yra lygus 20;
+                //ar antras skaičius yra didesnis už pirmąjį ir yra mažesnis už 100.
+
+                Console.WriteLine("Įveskite du skaičius");
+                int pirmsk = Convert.ToInt32(Console.ReadLine());
+                int antrska = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine();
+
+                if (pirmsk > antrska || pirmsk == 0)
+                {
+                    Console.WriteLine("pirmas skaičius yra didesnis už antrąjį, arba yra lygus 0");
+                }
+                Console.WriteLine();
+
+                if (antrska > pirmsk || antrska == 5)
+                {
+                    Console.WriteLine("antras skaičius yra didesnis už pirmąjį, arba yra lygus 5");
+                }
+                Console.WriteLine();
+
+                if (antrska < pirmsk || pirmsk == 20)
+                {
+                    Console.WriteLine("pirmas skaičius yra didesnis už antrąjį ir yra lygus 20");
+                }
+                Console.WriteLine();
+
+                if (antrska > pirmsk && antrska < 100)
+                {
+                    Console.WriteLine("antras skaičius yra didesnis už pirmąjį ir yra mažesnis už 100");
+                }
+                Console.WriteLine("Programos pabaiga");
             }
 
         }
