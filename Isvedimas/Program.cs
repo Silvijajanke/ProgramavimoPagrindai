@@ -8,6 +8,7 @@ namespace Isvedimas
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
+            Console.InputEncoding = System.Text.Encoding.Unicode;
 
             // uzduotis 1
 
@@ -391,6 +392,9 @@ namespace Isvedimas
                 //ar įvestas gyvūnas yra šuo;
                 //ar įvestas gyvūnas yra katė;
                 //ar įvestas gyvūnas yra žiurkėnas.
+
+                Console.OutputEncoding = System.Text.Encoding.Unicode;
+                Console.InputEncoding = System.Text.Encoding.Unicode;
 
                 Console.WriteLine("Įveskite gyvūno rūšį");
                 string gyvunas = Console.ReadLine();
