@@ -45,7 +45,7 @@ namespace Isvedimas
             Console.WriteLine($"{skaicius} {skaicius} {skaicius} {skaicius}");
 
             // uzduotis 4
-            
+
             //Liepkite vartotojui įvesti tris skaičius.
             //Išveskite visų šių skaičių sumą, skirtumą, sandaugą ir dalmenį, 
             //nurodant atliekamus veiksmus ir šių skaičių reikšmes ekrane.
@@ -83,7 +83,7 @@ namespace Isvedimas
             int antras = Convert.ToInt32(Console.ReadLine());
             int trecias = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Įvestų skaičių vidurkis:");
-            Console.WriteLine($"({pirmas} + {antras} + {trecias}) / 3 = " + $"{(pirmas + antras + trecias) / 3 }");
+            Console.WriteLine($"({pirmas} + {antras} + {trecias}) / 3 = " + $"{(pirmas + antras + trecias) / 3}");
 
             // 3. Liepkite įvesti tris skaičius.
             // Išveskite įvestus skaičius, jų kvadratus,
@@ -101,14 +101,14 @@ namespace Isvedimas
             Console.WriteLine($"{skaic3 * skaic3}");
 
             Console.WriteLine("Įvestas skaičius pakeltas trečiuoju laipsniu: ");
-            Console.WriteLine($"{skaic1 ^ 3 }");
-            Console.WriteLine($"{skaic2 ^ 3 }");
-            Console.WriteLine($"{skaic3 ^ 3 }");
+            Console.WriteLine($"{skaic1 ^ 3}");
+            Console.WriteLine($"{skaic2 ^ 3}");
+            Console.WriteLine($"{skaic3 ^ 3}");
 
             Console.WriteLine("Įvestas skaičius padalintas iš 2 : ");
-            Console.WriteLine($"{(double)skaic1 / 2 }");
-            Console.WriteLine($"{(double)skaic2 / 2 }");
-            Console.WriteLine($"{(double)skaic3 / 2 }");
+            Console.WriteLine($"{(double)skaic1 / 2}");
+            Console.WriteLine($"{(double)skaic2 / 2}");
+            Console.WriteLine($"{(double)skaic3 / 2}");
 
 
             // uzduotis 9
@@ -132,6 +132,7 @@ namespace Isvedimas
             //Patikrinti, ar skaičius dalinasi iš 4, jei taip -išvesti “taip, dalinasi iš 4”;
             //Patikrinti, ar skaičius yra didesnis nei 10, jei taip -išvesti “taip, skaičius yra didesnis už 10”
 
+            Console.Write("Patikrinimas ar skaičius yra neigiamas.");
             Console.WriteLine("Įveskite bet kokį skaičių");
             int betKokSkaic = Convert.ToInt32(Console.ReadLine());
             if (betKokSkaic < 0)
@@ -216,7 +217,75 @@ namespace Isvedimas
                 Console.WriteLine($"{ivestaskaicius + antrsk}");
                 Console.WriteLine("Įvestų skaičių sandauga : ");
                 Console.WriteLine($"{ivestaskaicius * antrsk}");
+
+                // uzduotis 11
+                // 1. Liepkite vartotojui įvesti tris skaičius, parašyti šią patikrinimo sąlygą, naudojant else if dalis:
+                //ar pirmas skaičius didesnis už antrą;
+                //ar antras skaičius didesnis už trečią;
+                //ar trečias skaičius didesnis už pirmą;
+                //ar pirmi du skaičiai lygūs;
+
+                Console.WriteLine("Įveskite tris skaičius, po kiekvienu paspauskite ENTER");
+                int number1 = Convert.ToInt32(Console.ReadLine());
+                int number2 = Convert.ToInt32((Console.ReadLine()));
+                int number3 = Convert.ToInt32((Console.ReadLine()));
+                if (number1 > number2)
+                {
+                    Console.WriteLine("Pirmas skaičius didesnis už antrą");
+                }
+                else if (number2 > number3)
+                {
+                    Console.WriteLine("Antras skaičius didesnis už trečią");
+                }
+                else if (number3 > number1)
+                {
+                    Console.WriteLine("Trečias skaičius didesnis už pirmą");
+                }
+                else if (number1 == number2)
+                {
+                    Console.WriteLine("Pirmi du skaičiai lygūs");
+                }
+                Console.WriteLine("Programos pabaiga");
+
+                // 2. Liepkite vartotojui įvesti šios dienos oro temperatūrą, atlikite šiuos patikrinimus:
+                //ar temperatūra< 0 - išvesti “žiauriai šalta”;
+                //ar temperatūra< 10 - išvesti “labai šalta”;
+                //ar temperatūra< 20 - išvesti “šalta”;
+                //ar temperatūra< 30 - išvesti “normali temperatūra”;
+                //ar temperatūra< 40 - išvesti “karšta”;
+                //ar temperatūra >= 40 - išvesti “visiškai degina”;
+
+                Console.WriteLine("Įveskite šios dienos temperatūrą");
+                int temp = Convert.ToInt32(Console.ReadLine());
+
+                if (temp < 0)
+                {
+                    Console.WriteLine("žiauriai šalta");
+                }
+                else if (temp < 10)
+                {
+                    Console.WriteLine("labai šalta");
+                }
+                else if (temp < 20)
+                {
+                    Console.WriteLine("šalta");
+                }
+                else if (temp < 30)
+                {
+                    Console.WriteLine("normali temperatūra");
+                }
+                else if (temp < 40)
+                {
+                    Console.WriteLine("karšta");
+                }
+                else if (temp >= 40)
+                {
+                    Console.WriteLine("visiškai degina");
+                }
+                
+                Console.WriteLine("Programos pabaiga ");
             }
-            
+
         }
+    }
 }
