@@ -362,8 +362,53 @@ namespace Isvedimas
                     Console.WriteLine("antras skaičius yra didesnis už pirmąjį ir yra mažesnis už 100");
                 }
                 Console.WriteLine("Programos pabaiga");
-            }
 
-        }
+                // uzduotis 13
+                //Liepkite vartotojui įvesti tris skaičius.Su switch patikrinkite pirmąjį skaičių:
+                //ar jis lygus 1: išveskite visų trijų skaičių sumą;
+                //ar jis lygus 2: išveskite pirmo ir trečio skaičių skirtumą;
+                //ar jis lygus 3: išveskite antro ir trečio skaičių sandaugą.
+                Console.WriteLine("Įveskite tris skaičius, po kiekvienu paspauskite ENTER");
+                int sk1 = Convert.ToInt32(Console.ReadLine());
+                int sk2 = Convert.ToInt32(Console.ReadLine());
+                int sk3 = Convert.ToInt32(Console.ReadLine());
+                switch (sk1)
+                {
+                    case 1:
+                        Console.WriteLine($"{sk1 + sk2 + sk3}");
+                        break;
+                    case 2:
+                        Console.WriteLine($"{sk1 - sk3}");
+                        break;
+                    case 3:
+                        Console.WriteLine($"{sk3 * sk3}");
+                        break;
+                }
+                Console.WriteLine("Programos pabaiga");
+
+                // 2. uzduotis
+                //Liepkite vartotojui įvesti gyvūno rūšį.Su switch patikrinkite:
+                //ar įvestas gyvūnas yra šuo;
+                //ar įvestas gyvūnas yra katė;
+                //ar įvestas gyvūnas yra žiurkėnas.
+
+                Console.WriteLine("Įveskite gyvūno rūšį");
+                string gyvunas = Console.ReadLine();
+
+                switch (gyvunas)
+                {
+                    case "šuo":
+                        Console.WriteLine("įvestas gyvūnas yra šuo");
+                        break;
+                    case "katė":
+                        Console.WriteLine("įvestas gyvūnas yra katė");
+                        break;
+                    case "žiurkėnas":
+                        Console.WriteLine("įvestas gyvūnas yra žiurkėnas");
+                        break;
+                }
+                Console.WriteLine("Programos pabaiga");
+
+            }
     }
 }
