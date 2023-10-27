@@ -413,6 +413,43 @@ namespace Isvedimas
                 }
                 Console.WriteLine("Programos pabaiga");
 
+                // uzduotis 14
+
+                // 1. uzduotis
+                //Į ekraną išveskite kelis sunumeruotus pasirinkimus 
+                // 1 - stacionarus kompiuteris
+                //2 - nešiojamas kompiuteris
+                //3 - planšetė
+
+                // 2. Liepkite vartotojui įvesti pasirinkimo numerį. 
+                // 3. Pagal įvestą numerį išveskite atitinkamą tekstą.
+                // Pvz:
+                // nešiojamuoju kompiuteriu galite naudotis visur
+                // stacionariu kompiuteriu galite naudotis tik namuose arba darbo vietoje
+                //planšete galite naudotis visur
+                //Neradus tinkamo varianto išvesti, kad tokio pasirinkimo nėra.
+
+                Console.WriteLine("Pasirinkimai : ");
+                Console.WriteLine("1 - stacionarus kompiuteris");
+                Console.WriteLine("2 - nešiojamas kompiuteris");
+                Console.WriteLine("3 - planšetė");
+                Console.WriteLine("Išsirinkite vieną įrenginį ir parašykite jo numerį");
+                int ireng = Convert.ToInt32(Console.ReadLine());
+                switch (ireng)
+                {
+                    case 1:
+                        Console.WriteLine("stacionariu kompiuteriu galite naudotis tik namuose arba darbo vietoje");
+                        break;
+                    case 2:
+                        Console.WriteLine("nešiojamuoju kompiuteriu galite naudotis visur");
+                        break;
+                    case 3:
+                        Console.WriteLine("planšete galite naudotis visur");
+                        break;
+                    default:
+                        Console.WriteLine("tokio pasirinkimo nėra");
+                        break;
+                }
             }
-    }
+        }
 }
